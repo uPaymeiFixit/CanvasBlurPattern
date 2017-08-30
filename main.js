@@ -41,11 +41,11 @@ onload = function() {
 	document.body.appendChild( ctx.canvas );
 
 	// Stats setup
-	stats = new Stats();
-	stats.setMode( 0 );
-	document.body.appendChild( stats.domElement );
-	document.getElementById("stats").style.position = "absolute";
-	document.getElementById("stats").style.top = "0px";
+	// stats = new Stats();
+	// stats.setMode( 0 );
+	// document.body.appendChild( stats.domElement );
+	// document.getElementById("stats").style.position = "absolute";
+	// document.getElementById("stats").style.top = "0px";
 
 	// Setup for objects
 	circle = [];
@@ -142,13 +142,13 @@ function distance(x1,y1,x2,y2) {
 // Animation loop
 function loop() {
 	requestAnimationFrame( loop );
-	stats.begin();
+	// stats.begin();
 	ctx.clearRect(0,0,_WIDTH,_HEIGHT);
 	for ( var i = 0; i < circle.length; i++ ) {
 		circle[i] = fade( circle[i] );
 		circle[i].render();
 	}
-	stats.end();
+	// stats.end();
 }
 
 // Fade math
