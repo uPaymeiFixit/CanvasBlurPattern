@@ -6,7 +6,7 @@ An early project created to practice JavaScript and HTML5. Uses HTML5 canvas to 
 This was my first time really using classes in JavaScript, as welling as trying to prioritize mobile device input. New `Circle` objects are created with a random color, and blurred when drawn on the canvas. The circles are faded in and then back out.
 
 ### Controls
-**Click / Tap** Spawn new circle at cursor location
+**Click / Tap:** Spawn new circle at cursor location
 **Double click:** Enter full screen
 
 [Live Demo](https://gibbs.tk/portfolio/canvas-blur-pattern/demo/)
