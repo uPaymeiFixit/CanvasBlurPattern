@@ -37,6 +37,7 @@ onload = function() {
 	// Canvas setup
 	ctx = document.createElement( "canvas" ).getContext( "2d" );
 	ctx.canvas.innerHTML = "Your browser does not fully support HTML5";
+	ctx.canvas.ondblclick = ctx.canvas.webkitRequestFullScreen;
 	ctxSetup();
 	document.body.appendChild( ctx.canvas );
 
